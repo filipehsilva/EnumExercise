@@ -17,7 +17,7 @@
             Hours = hours;
         }
 
-        public double totalValue()
+        public double TotalValue()
         {
             return ValuePerHour * Hours;
         }

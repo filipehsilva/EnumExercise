@@ -31,7 +31,7 @@ for (int i = 0; i < n; i++)
     Console.Write("Duration (Hours): ");
     int hours = int.Parse(Console.ReadLine());
     HourContract contract = new HourContract(contractDate, valuePerHour, hours);
-    worker.addContract(contract);
+    worker.AddContract(contract);
 }
 
 Console.WriteLine();
@@ -42,4 +42,4 @@ int year = int.Parse(monthAndYear.Substring(3));
 Console.WriteLine();
 Console.WriteLine($"Name: {worker.Name}");
 Console.WriteLine($"Department: {worker.Department.Name}");
-Console.WriteLine($"Income for {monthAndYear}: {worker.income(year, month).ToString("F2", CultureInfo.InvariantCulture)}");
+Console.WriteLine($"Income for {monthAndYear}: {worker.Income(year, month).ToString("F2", CultureInfo.InvariantCulture)}");
